@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hotlist App</title>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- App View -->
+        <div class="toolbar">
+            <button type="button" class="icon hotlist-icon"></button>
+            <span class="icon">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                    <path fill="currentColor" d="M11 4 L6 9 L2 9 L2 15 L6 15 L11 20 L11 5" />
+                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14" opacity=".4" />
+                </svg>
+            </span>
+            <span class="icon">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                >
+                    <g transform="translate(0 3) scale(.75)">
+                        <path d="M6.5 6.5 L19 17.5 L12 23 L12 1 L19 6.5 L6.5 17.5" />
+                    </g>
+                </svg>
+            </span>
+            <span class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <mask id="wifi">
+                        <rect x="0" y="0" width="24" height="24" fill="black" />
+                        <path d="M 0 10 L 12 21 L 24 10 L 12 0 Z" fill="white" />
+                    </mask>
+                    <g mask="url(#wifi)">
+                        <g fill="none" stroke="currentColor">
+                            <circle cx="12" cy="19" r="13.5" stroke-width="3"></circle>
+                            <circle cx="12" cy="19" r="7.5" stroke-width="3"></circle>
+                        </g>
+                        <circle cx="12" cy="20" r="4" fill="currentColor"></circle>
+                    </g>
+                </svg>
+            </span>
+            <span class="icon">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                >
+                    <circle cx="11" cy="11" r="6.5" stroke-width="2" />
+                    <path
+                        d="M16 16 L20 20"
+                        stroke-width="2.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+            </span>
+            <span class="date">Thu 8 Dec</span>
+            <span class="time">15:26</span>
+        </div>
+
+        <!-- Fake window height -->
+        <div class="window"></div>
+
+        <!-- App Controls -->
+        <div class="controls">
+            <button type="button" data-trigger="set-dummy-items">Set dummy items</button>
+        </div>
+
+        <!-- App -->
+        <div class="app" id="app"></div>
+
+        <!-- Core app -->
+        <script type="module" src="demo.js"></script>
+    </body>
+</html>
